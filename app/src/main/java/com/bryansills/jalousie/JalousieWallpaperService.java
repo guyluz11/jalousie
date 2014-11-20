@@ -13,8 +13,7 @@ public class JalousieWallpaperService extends GLWallpaperService {
     }
 
     public Engine onCreateEngine() {
-        JalousieEngine engine = new JalousieEngine();
-        return engine;
+        return new JalousieEngine();
     }
 
     class JalousieEngine extends GLEngine {
