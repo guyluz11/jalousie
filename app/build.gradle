@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "com.bryansills.jalousie"
+
         minSdkVersion 15
-        targetSdkVersion 21
+        targetSdkVersion 33
         versionCode 1
         versionName "0.1"
+        namespace "com.bryansills.jalousie"
     }
     buildTypes {
         release {
@@ -20,7 +21,7 @@ android {
 }
 
 dependencies {
-    compile files('libs/GLWallpaperService.jar')
+    implementation files('libs/GLWallpaperService.jar')
 
-    compile "com.android.support:appcompat-v7:21.0.0"
+    implementation "com.android.support:appcompat-v7:28.0.0"
 }
